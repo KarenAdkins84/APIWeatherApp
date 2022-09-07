@@ -6,11 +6,15 @@ header {
     background-color: blue;
     display:block;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
 }
 
-body {
+.container {
     display: flex;
-
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .description {
@@ -23,5 +27,5 @@ body {
 
 .weather.loading:after {
     visibility: visible;
-    
+
 }

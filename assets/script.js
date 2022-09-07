@@ -1,9 +1,8 @@
 //  This is the api for search by city name: https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 let weather = {
-    "apiKey": "55a6954f12cc210afa8e25673eee2695",
     fetchWeather: function (city) {
       fetch(
-        "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + this.apiKey
+        "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=55a6954f12cc210afa8e25673eee2695"
       )
       .then((response)=> response.json()) 
       .then((data)=> this.displayWeather(data))
@@ -28,22 +27,22 @@ let weather = {
 
 };
 
-function displayCity() {
-    return localStorage.getItem("cityName");
-}
+//function displayCity() {
+//    return localStorage.getItem("cityName");
+//}
 
-function updateText() {
-    var userOutput = displayCity();
-    document.getElementById("output").innerText = userOutput;
-}
+//function updateText() {
+ //   var userOutput = displayCity();
+ //   document.getElementById("output").innerText = userOutput;
+//}
 
-function getInput() {
-    var userOutput = document.getElementById("search-box").value;
-    localStorage.setItem("cityName",userOutput );
-    updateText();
-}
+//function getInput() {
+    //var userOutput = document.getElementById("search-box").value;
+    //localStorage.setItem("cityName",userOutput );
+    //updateText();
+//}
 
-getInput();
+//getInput();
 //const userInput = document.getElementById("search-box");
 //const getButton = document.getElementById("search-btn");
 //const userOutput = document.getElementById("output");
