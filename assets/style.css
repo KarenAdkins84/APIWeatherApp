@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+    display:block;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.weather.loading {
+    visibility: hidden;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    
+}
