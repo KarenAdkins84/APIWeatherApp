@@ -12,25 +12,28 @@
         <header>
             <h1>Weather Dashboard</h1>
         </header>
-        <div class="card container">
-            <div class="search">
-                <h3>Search by City</h3>
-                <input type="text" class="search-box" placeholder="Name of City">
-                <button class="search-btn" id="button">Get Weather</button>
-                <p class="output" id="output"></p>
+        <div class="container">
+            <div class="row search">
+                <div class="col-4 search">
+                    <h3>Search by City</h3>
+                    <input type="text" class="search-box" placeholder="Name of City">
+                    <button class="search-btn" id="button">Get Weather</button>
+                    <p class="output" id="output"></p>
+                </div>
+                <div class="col-8 current-weather">
+                    <h3 class="city">Weather in </h3>
+                    <div class="date">Today</div>
+                    <div class="temp">75°F</div>
+                    <img src="" alt="" class="icon"/>
+                    <div class="description">Cloudy</div>
+                    <div class="humidity">Humidity: 60%</div>
+                    <div class="wind">Wind Speed: 9 mph</div>
+                    <div class="UVIndex">UV Index: </div>
+                </div>
             </div>
         </div>
-        <div class="weather card container loading">
-            <h3 class="city">Weather in </h3>
-            <div class="date">Today</div>
-            <div class="temp">75°F</div>
-            <img src="" alt="" class="icon"/>
-            <div class="description">Cloudy</div>
-            <div class="humidity">Humidity: 60%</div>
-            <div class="wind">Wind Speed: 9 mph</div>
-            <div class="UVIndex">UV Index: </div>
-        </div>
- 
+        <div class="fiveDayForecast container row"></div>
+        
         
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -9,6 +9,8 @@ header {
     align-items: center;
     text-align: center;
     width: 100vw;
+    border-bottom: 10px solid darkblue;
+    color: whitesmoke;
 }
 
 .container {
@@ -21,11 +23,11 @@ header {
     text-transform: capitalize;
 }
 
-.weather.loading {
-    visibility: hidden;
-}
-
-.weather.loading:after {
-    visibility: visible;
-
+.col-sm {
+    border: 0.25em solid whitesmoke;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+    background-color: darkblue;
+    color: whitesmoke;
 }
