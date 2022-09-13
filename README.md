@@ -23,3 +23,7 @@ Jquery
 ![image](./assets/Screenshot%202022-09-12%20223801%232.png)
 
 ## Deployed Application
+https://karenadkins84.github.io/APIWeatherApp/
+
+## Github Repo
+https://github.com/KarenAdkins84/APIWeatherApp
