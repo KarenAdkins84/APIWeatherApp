@@ -12,8 +12,7 @@ let weather = {
     },
     displayWeather: function(data) {
         const {name} = data;
-        const {date} = new Date((data.dt * 1000)).toLocaleDateString("en-US");
-        console.log(new Date((data.dt * 1000)).toLocaleDateString("en-US"));
+        const {date} = (data.coord.dt * 1000).toLocaleString("en-US");
         const {icon, description} = data.weather[0];
         const {temp, humidity} = data.main;
         const {speed} = data.wind;
@@ -53,10 +52,10 @@ function getForecast(lat, lon) {
 function showForecast(data)
 {
     const row = document.createElement("div");
-    row.classList.add("col-2")
+    row.classList.add("col-sm")
     for (var i=1; i < 6; i++) {
         const col = document.createElement("div");
-        col.classList.add("col");
+        col.classList.add("col-sm");
         const date = document.createElement("div");
         date.classList.add("date1");
         col.appendChild(date);
@@ -79,6 +78,7 @@ function showForecast(data)
 
 
     }
+    
     forecastContainer.appendChild(row)
 }
 
