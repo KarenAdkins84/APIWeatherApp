@@ -31,3 +31,18 @@ header {
     background-color: darkblue;
     color: whitesmoke;
 }
+
+.current-weather {
+    border: 0.25em solid darkblue;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.fiveDayForecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
